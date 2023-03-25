@@ -16,7 +16,7 @@ function prosesLogin(username, password) {
     // let token = generateRandomNumber();
     console.log("BERHASIL MASUK");
     // console.log("TOKEN ANDA = " + token);
-    ambilData(nama, username, umur, instansi);
+    ambilData(token);
   } else if (username == "neeesya" && password !== "nesya123") {
     console.log("PASSWORD ANDA SALAH");
   } else {
@@ -24,7 +24,7 @@ function prosesLogin(username, password) {
   }
 }
 
-function ambilData(nama, username, umur, instansi) {
+function ambilData(token) {
   if (umur >= 21) {
     console.log("Nama : " + nama);
     console.log("Username : " + username);
